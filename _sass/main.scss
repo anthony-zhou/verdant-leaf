@@ -1,9 +1,34 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700,800|Merriweather:300,400,700,900');
 html {
   font-family: 'Merriweather', serif;
+  box-sizing: border-box;
+}
+
+nav.topnav {
+  display: flex;
+  height: 10vh;
+}
+nav.topnav a {
+  flex: auto;
+  text-align: center;
+}
+nav.topnav .header-logo {
+  flex-grow: 2;
+}
+nav.topnav .logo-text {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 20pt;
+  font-weight: bold;
+  display: inline;
+  position: relative;
+  top: -40%;
+}
+nav.topnav img {
+  height: 100%;
 }
 .recent-post-section {
   list-style-type: none;
+  padding-left: 0;
 }
 .recent-post-section h2 {
   font-family: 'Merriweather Sans', sans-serif;
@@ -27,4 +52,18 @@ a {
 }
 a:hover {
   color: gray;
+}
+@media screen and (min-width: 1020px) {
+  .recent-post-container {
+    width: 70vw;
+    margin: auto;
+  }
+  .article-container  {
+    width: 50vw;
+    margin: auto;
+  }
+  .article-container img {
+    width: 60%;
+    margin: auto;
+  }
 }

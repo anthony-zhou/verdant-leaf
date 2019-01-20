@@ -1,7 +1,15 @@
-<nav>
+<nav class="topnav">
   {% for item in site.data.navigation %}
-    <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>
-      {{ item.name }}
+    {% if item.link == "/" %}
+    <a href="{{ item.link }}" class="header-logo" style="order: {{ item.order }}">
+      <p class="logo-text">Verdant</p>
+      <img src="/assets/images/two-triangles-logo.svg"/>
+      <p class="logo-text">Leaf</p>
     </a>
+    {% else %}
+      <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %} style="order: {{ item.order }}">
+          {{ item.name }}
+      </a>
+    {% endif %}
   {% endfor %}
 </nav>

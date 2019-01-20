@@ -4,4 +4,4 @@ title: about
 ---
 # About page
 
-This page tells you a little bit about me
+This site is a publication platform made by, for, and of high school students.

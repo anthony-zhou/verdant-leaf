@@ -1,6 +1,9 @@
-- name: Home
-  link: /
 - name: About
   link: /about.html
+  order: 1
+- name: Home
+  link: /
+  order: 2
 - name: Staff
   link: /staff.html
+  order: 3
