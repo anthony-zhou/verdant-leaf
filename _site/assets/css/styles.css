@@ -1,2 +1,29 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700,800|Merriweather:300,400,700,900");
+html {
+  font-family: 'Merriweather', serif; }
+
+.recent-post-section {
+  list-style-type: none; }
+
+.recent-post-section h2 {
+  font-family: 'Merriweather Sans', sans-serif; }
+
+.recent-post {
+  border-top: 1px solid gray; }
+
+.recent-post:hover {
+  color: gray; }
+
+.recent-post:hover a {
+  color: gray; }
+
 .current {
-  color: green; }
+  font-weight: bold; }
+
+a {
+  color: black;
+  transition: color 0.5s;
+  text-decoration: none; }
+
+a:hover {
+  color: gray; }
