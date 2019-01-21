@@ -7,7 +7,7 @@ title: about
 
   }
   #container {
-  	opacity: 0;
+  	opacity: 1;
   width: 100%;
   }
    #visible-container {
