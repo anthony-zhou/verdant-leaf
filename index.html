@@ -2,15 +2,42 @@
 layout: default
 title: Home
 ---
+<div class="feature-section">
+  {% for post in site.posts limit:4 offset: 4 %}
+  <div style="{% cycle "left: 30%; top:20%;", "left: 10%; top: 50%;", "right: 30%;top:20%;", "right: 10%; top: 50%" %}" class="small-cloud">
+    <a href="{{ post.url }}">
+      <div class="small-circle">
+        <img src="assets/images/{{post.imgurl}}" />
+      </div>
+      <div  class="small-circle-text">
+        <b>{{ post.category | upcase }}</b>
+        <h2>{{ post.title }}</h2>
+      </div>
+    </a>
+  </div>
+  {% endfor %}
+  <div class="large-circle">
+    <a href="how-to/2018/09/09/how-to-make-better-toast.html">
+      <img src="assets/images/Toast in Toaster.jpg">
+      <b>HAVE A BETTER BREAKFAST</b>
+      <h2>How to make better toast.</h2>
+    </a>
+  </div>
+</div>
 <div class="recent-post-container">
   <h1>Latest Posts</h1>
   <i>This site is currently under construction. Check out our articles below, and make sure to check back soon to see our updated site!</i>
   <ul class="recent-post-section">
-    {% for post in site.posts %}
+    {% for post in site.posts%}
       <li class="recent-post">
-        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-        <p>{{ post.author }} | {{ post.date | date_to_string}}</p>
-        <p>{{ post.description }}</p>
+        <div class="recent-preview-img">
+          <img src="assets/images/{{ post.imgurl }}" alt="Preview image for {{post.title}}"/>
+        </div>
+        <div class="recent-title">
+          <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+          <p>{{ post.author }} | {{ post.date | date_to_string}}</p>
+          <p>{{ post.description }}</p>
+        </div>
       </li>
     {% endfor %}
   </ul>

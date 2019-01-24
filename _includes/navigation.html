@@ -2,9 +2,7 @@
   {% for item in site.data.navigation %}
     {% if item.link == "/" %}
     <a href="{{ item.link }}" class="header-logo" style="order: {{ item.order }}">
-      <p class="logo-text">Verdant</p>
-      <img src="/assets/images/two-triangles-logo.svg"/>
-      <p class="logo-text">Leaf</p>
+      <p class="logo-text">Verdant Leaf</p>
     </a>
     {% else %}
       <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %} style="order: {{ item.order }}">
