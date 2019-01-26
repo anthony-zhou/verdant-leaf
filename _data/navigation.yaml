@@ -1,8 +1,8 @@
-- name: About
-  link: /about.html
-  order: 1
 - name: Home
   link: /
+  order: 1
+- name: About
+  link: /about.html
   order: 2
 - name: Staff
   link: /staff.html

@@ -10,15 +10,15 @@
     <nav class="topnav">
   
     
-      <a href="/about.html"  style="order: 1">
-          About
-      </a>
+    <a href="/" class="header-logo" style="order: 1">
+      <p class="logo-text">Verdant Leaf</p>
+    </a>
     
   
     
-    <a href="/" class="header-logo" style="order: 2">
-      <p class="logo-text">Verdant Leaf</p>
-    </a>
+      <a href="/about.html"  style="order: 2">
+          About
+      </a>
     
   
     
@@ -29,7 +29,81 @@
   
 </nav>
 
-    <h1>Staff</h1>
+    <div class="staff-page-container">
+  <div class = "top">
+    <div class = "top-text">
+    Who are we?
+    <div class="arrow bounce">
+  <a class="arrow" href="#0" onclick="smoothScroll(document.getElementById('middle'))"><img src = "assets/images/arrow.png" alt = "arrow" height= "20vh"></a>
+</div>
+    </div>
+  </div>
+  <div id = "middle">
+    <div class = "team">
+      the team
+    </div>
+    <div class = "a">
+      <img class = "ai" src = "assets/images/vector-person1.jpg" >
+      Anthony Zhou
+      <div class = "a1">
+        black belt coder
+      </div>
+    </div>
+    <div class = "a">
+      <img class = "ai" src = "assets/images/vector-person2.jpg" >
+      <a href = "https://axz.world/" class = "allen">Allen Zhou</a>
+      <div class = "a1">
+        yellow belt coder
+      </div>
+    </div>
+    <div class = "a">
+      <img class = "ai" src = "assets/images/vector-person3.jpg" >
+      Daniel Formella
+      <div class = "a1">
+        exquisite & fantastic writer
+      </div>
+    </div>
+    <div class = "a">
+      <img class = "ai" src = "assets/images/vector-person4.jpg">
+
+      Mark Twain
+      <div class = "a1">
+        writer
+      </div>
+    </div>
+  </div>
+  <div class = "bottom">
+    <div class = "quote">
+      "courage is resistance to fear, mastery of fear, not absence of fear" - mark twain
+    </div>
+    <a class = "pix" href="http://www.freepik.com">Designed by Freepik</a>
+  </div>
+  <script title="autoscroll">
+  	window.smoothScroll = function(target) {
+      var scrollContainer = target;
+      do { //find scroll container
+          scrollContainer = scrollContainer.parentNode;
+          if (!scrollContainer) return;
+          scrollContainer.scrollTop += 1;
+      } while (scrollContainer.scrollTop == 0);
+
+      var targetY = 0;
+      do { //find the top of target relatively to the container
+          if (target == scrollContainer) break;
+          targetY += target.offsetTop;
+      } while (target = target.offsetParent);
+
+      scroll = function(c, a, b, i) {
+          i++; if (i > 50) return;
+          c.scrollTop = a + (b - a) / 50 * i;
+          setTimeout(function(){ scroll(c, a, b, i); }, 20);
+      }
+      // start scrolling
+      scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+      }
+  	</script>
+<!--
+<h1>All authors</h1>
 
 <ul>
   
@@ -47,7 +121,8 @@
 </p>
     </li>
   
-</ul>
+</ul>-->
+</div>
 
   </body>
 </html>

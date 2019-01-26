@@ -128,11 +128,11 @@ font-size: 3vw;
 margin-bottom: 2vw;
 }
   </style>
-  
+
  <div id= "container" >
   <div class = "top">
   	<div class = "topa">
-    	<b>Verdant Articles</b>
+    	<b>Articles</b>
     </div>
     <div class = "topb">
     	<i>Written | Created | Managed<br> by high school students</i>
@@ -193,5 +193,5 @@ function fadein() {
     // start scrolling
     scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
     }
-  
+
 </script>
