@@ -29,7 +29,11 @@
   
 </nav>
 
-    <div class="feature-section">
+    <div class="home-page-container">
+<div class="layer layer-01"></div>
+<div class="layer layer-02"></div>
+
+<div class="feature-section">
   
   <div style="left: 30%; top:20%;" class="small-cloud">
     <a href="/opinion/2018/11/14/no-shoes-inside.html">
@@ -40,6 +44,8 @@
         <b>OPINION</b>
         <h2>Why you shouldn't wear shoes inside</h2>
       </div>
+      
+
     </a>
   </div>
   
@@ -52,6 +58,8 @@
         <b>INTERVIEW</b>
         <h2>What does it take to be a varsity athlete?</h2>
       </div>
+      
+
     </a>
   </div>
   
@@ -64,6 +72,8 @@
         <b>SHORT TAKE</b>
         <h2>The Green Bay Packers versus the Argentinian National Team</h2>
       </div>
+      
+
     </a>
   </div>
   
@@ -76,6 +86,8 @@
         <b>HOW-TO</b>
         <h2>How to prepare for your SATs and ACTs</h2>
       </div>
+      
+
     </a>
   </div>
   
@@ -259,6 +271,37 @@
     
   </ul>
 </div>
+</div>
+<script type="text/javascript">
+  window.addEventListener('scroll', () => {
+     let children = document.getElementsByClassName('layer');
+     for(let i = 0; i < children.length; i++) {
+       children[i].style.transform = 'translateY(-' + (window.pageYOffset * i / children.length) + 'px)';
+     }
+  }, false)
+  </script>
 
   </body>
+  <script>
+    var lastScrollTop = 0;
+    window.onscroll = function() {
+      var st = window.pageYOffset || document.documentElement.scrollTop;
+    if(st >= lastScrollTop) {
+      document.getElementsByClassName("topnav")[0].classList.add("topnav-scrolling-down");
+      document.getElementsByClassName("topnav")[0].classList.remove("topnav-scrolling-up");
+    } else {
+      document.getElementsByClassName("topnav")[0].classList.remove("topnav-scrolling-down");
+      document.getElementsByClassName("topnav")[0].classList.add("topnav-scrolling-up");
+    }
+    lastScrollTop = st <= 0 ? 0: st;
+    if(window.pageYOffset <= 0) {
+      if(document.getElementsByClassName("topnav-scrolling-up").length > 0) {
+      	if(document.getElementsByClassName("topnav-scrolling-down").length > 0) {
+      		document.getElementsByClassName("topnav-scrolling-down")[0].classList.remove("topnav-scrolling-down");
+      	}
+        document.getElementsByClassName("topnav-scrolling-up")[0].classList.remove("topnav-scrolling-up");
+      }
+    }
+    }
+  </script>
 </html>
