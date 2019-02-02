@@ -1,6 +1,6 @@
 ---
-short_name: jamie
-name: Jamie Miller
+short_name: Anthony
+name: Anthony Miller
 position: Chief Editor
 ---
-Jamie is an avid fruit grower based in the south of France.
+Anthony is an avid fruit grower based in the south of France.
