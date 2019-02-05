@@ -37,11 +37,11 @@ width: 40vw;
     font-size: 1vw;
     line-height: 1.8;
     color: white;
-    background-color: #2ccc84;
+    background-color: #008dff;
     text-decoration: none;
 
     border-radius: 30px;
-    border: 2px solid #2ccc84;
+    border: 2px solid #008dff;
     padding: 10px;
   }
 
@@ -73,7 +73,7 @@ margin-bottom: 2vw;
   .middlebutton{
     background-color: none;
     border-radius: 30px;
-    border: 2px solid #2ccc84;
+    border: 2px solid #008dff;
     padding: 10px;
     text-decoration: none;
     color: white;
@@ -92,7 +92,7 @@ margin-bottom: 2vw;
     padding-bottom: 0vw;
     padding-left: 8vw;
     color: white;
-    background-color: #2ccc84;
+    background-color: #008dff;
     height: 20vw;
     margin:0;
   }

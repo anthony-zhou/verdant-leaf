@@ -25,15 +25,15 @@ nav.topnav {
   display: flex;
   padding: 0 0px 0px 0px;
   z-index: 10;
-  background-color: white;
-  border-bottom: 1px solid #79959B;
+  background-color: #0098ff;
+  border-bottom: 1px solid #edf7ff;
 
   a {
     flex: auto;
     text-align: left;
     font-size: 20px;
     padding: 10px;
-    color: #79959B;
+    color: #edf7ff;
   }
   a:hover {
     opacity:1;
@@ -310,12 +310,12 @@ nav.topnav-scrolling-down {
     text-align: center;
   }
   .bottom {
-    background-color: #00ff99;
+    background-color: #008dff;
     height: 13vh;
   }
   .quote {
     position: absolute;
-    color: #00ff99;
+    color: #008dff;
     padding-top: 3%;
   }
   a.pix {
