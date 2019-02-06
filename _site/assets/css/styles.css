@@ -17,6 +17,26 @@ background: linear-gradient(to bottom, rgba(95,177,251,1) 0%, rgba(130,225,255,1
 .article-container {
   margin-top: 20%; }
 
+.author-page-container {
+  margin: auto;
+  margin-top: 10%; }
+  .author-page-container h1 {
+    border-left: 4px solid #0098ff;
+    padding-left: 10px; }
+  .author-page-container .author-post-section {
+    list-style: none;
+    padding: 0; }
+    .author-page-container .author-post-section li.author-post {
+      padding-top: 4%; }
+
+ul.all-authors {
+  list-style: none;
+  padding: 0; }
+  ul.all-authors li {
+    display: inline-block; }
+  ul.all-authors a {
+    color: black; }
+
 nav.topnav {
   position: fixed;
   top: 0;
@@ -25,21 +45,21 @@ nav.topnav {
   display: flex;
   padding: 0 0px 0px 0px;
   z-index: 10;
-  background-color: white;
-  border-bottom: 1px solid #79959B; }
+  background-color: #0098ff;
+  border-bottom: 1px solid #edf7ff; }
   nav.topnav a {
     flex: auto;
     text-align: left;
     font-size: 20px;
     padding: 10px;
-    color: #79959B; }
+    color: white; }
   nav.topnav a:hover {
-    opacity: 1;
-    color: #CDE4E9;
+    opacity: 0.8;
     transition: .5s; }
   nav.topnav .header-logo {
     flex-grow: 4;
-    text-align: left; }
+    text-align: left;
+    font-weight: bold; }
   nav.topnav .logo-text {
     font-size: 20px;
     display: inline;
@@ -122,6 +142,20 @@ nav.topnav-scrolling-down {
   .recent-post:hover {
     opacity: 0.7; } }
 @media screen and (min-width: 1020px) {
+  .author-page-container {
+    width: 80%; }
+
+  .all-authors-container {
+    width: 80%;
+    margin: auto; }
+
+  ul.all-authors li {
+    width: 45%;
+    margin-left: 1%;
+    margin-bottom: 1%;
+    border-left: 4px solid #008dff;
+    padding-left: 10px; }
+
   .layer {
     background-position: bottom center;
     background-size: contain;
@@ -274,11 +308,11 @@ nav.topnav-scrolling-down {
     color: #404040;
     text-align: center; }
   .staff-page-container .bottom {
-    background-color: #00ff99;
+    background-color: #008dff;
     height: 13vh; }
   .staff-page-container .quote {
     position: absolute;
-    color: #00ff99;
+    color: #008dff;
     padding-top: 3%; }
   .staff-page-container a.pix {
     color: #00ff99;

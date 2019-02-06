@@ -74,16 +74,20 @@ title: Staff
       scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
       }
   	</script>
-<!--
+
+<div class="all-authors-container">
 <h1>All authors</h1>
 
-<ul>
+<ul class="all-authors">
   {% for author in site.authors %}
     <li>
-      <h2><a href="{{ author.url }}">{{ author.name }}</a></h2>
-      <h3>{{ author.position }}</h3>
-      <p>{{ author.content | markdownify }}</p>
+      <a href="{{ author.url }}">
+        <h2>{{ author.name }}</h2>
+        <h3>{{ author.position }}</h3>
+        <p>{{ author.content | markdownify }}</p>
+      </a>
     </li>
   {% endfor %}
-</ul>-->
+</ul>
+</div>
 </div>
