@@ -72,7 +72,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  opacity: 0.7;
+  opacity: 0.9;
 }
 .recent-post h2 {
   font-size: 16pt;
@@ -200,7 +200,7 @@ nav.topnav-scrolling-down {
     text-align: center;
   }
   .large-circle h2 {
-    font-size: 36pt;
+    font-size: 56pt;
   }
   .large-circle {
     text-align: center;
@@ -210,9 +210,9 @@ nav.topnav-scrolling-down {
   }
   .large-circle {
     position: absolute;
-    width: 40vw;
-    height: 40vw;
-    border-radius: 25vw;
+    width: 450vw;
+    height: 35vw;
+    border-radius: .5vw;
     left: 50%;
     top: 70%;
     transform: translate(-50%, 0);
