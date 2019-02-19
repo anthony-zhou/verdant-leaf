@@ -1,6 +1,6 @@
 ---
 short_name: Allen Z
 name: Allen Z
-position: Writer
+position: Founder
 ---
-Allen likes to play the guitar.
+Allen likes to play the guitar and take long walks in cool weather.
