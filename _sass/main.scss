@@ -16,6 +16,32 @@ background: linear-gradient(to bottom, rgba(95,177,251,1) 0%, rgba(130,225,255,1
 }
 .article-container {
   margin-top: 20%;
+  margin-bottom: 50px;
+}
+.author-page-container {
+  margin: auto;
+  margin-top: 10%;
+  h1 {
+    border-left: 4px solid #0098ff;
+    padding-left: 10px;
+  }
+  .author-post-section {
+    list-style: none;
+    padding: 0;
+    li.author-post {
+      padding-top: 4%;
+    }
+  }
+}
+ul.all-authors {
+  list-style: none;
+  padding: 0;
+  li {
+    display: inline-block;
+  }
+  a {
+    color: black;
+  }
 }
 nav.topnav {
   position: fixed;
@@ -33,16 +59,16 @@ nav.topnav {
     text-align: left;
     font-size: 20px;
     padding: 10px;
-    color: #edf7ff;
+    color: white;
   }
   a:hover {
-    opacity:1;
-    color: #CDE4E9;
+    opacity:0.8;
     transition: .5s;
   }
   .header-logo {
     flex-grow: 4;
     text-align: left;
+    font-weight: bold;
   }
   .logo-text {
     font-size: 20px;
@@ -137,6 +163,22 @@ nav.topnav-scrolling-down {
 
 
 @media screen and (min-width: 1020px) {
+  .author-page-container {
+    width: 80%;
+  }
+  .all-authors-container {
+    width: 80%;
+    margin: auto;
+  }
+  ul.all-authors {
+    li {
+      width: 45%;
+      margin-left: 1%;
+      margin-bottom: 1%;
+      border-left: 4px solid #008dff;
+      padding-left: 10px;
+    }
+  }
   .layer {
   	background-position: bottom center;
   	background-size: contain;
@@ -160,7 +202,8 @@ nav.topnav-scrolling-down {
   }
   .article-container  {
     width: 50vw;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 10%;
   }
   .article-container img {
@@ -319,7 +362,7 @@ nav.topnav-scrolling-down {
     padding-top: 3%;
   }
   a.pix {
-    color: #00ff99;
+    color: #008dff;
     font-size: 3px;
     position: absolute;
   }

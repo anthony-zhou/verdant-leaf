@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.jpg">
+    <meta charset="utf-8">
+    <title>Daniel</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110049631-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-110049631-3');
+    </script>
+  </head>
+  <body>
+    <nav class="topnav">
+  
+    
+    <a href="/" class="header-logo" style="order: 1">
+      <p class="logo-text">Verdant Leaf</p>
+    </a>
+    
+  
+    
+      <a href="/about.html"  style="order: 2">
+          About
+      </a>
+    
+  
+    
+      <a href="/staff.html"  style="order: 3">
+          Staff
+      </a>
+    
+  
+</nav>
+
+    <div class="author-page-container">
+  <h1>Daniel F</h1>
+  <h2>Writer</h2>
+
+  <p>Daniel is a regular contributor to the Verdant Leaf</p>
+
+
+  <h2>Posts</h2>
+  <ul class="author-post-section">
+    
+    
+      <li class="author-post"><a href="/short%20take/2018/12/01/the-essence-of-hole-punchers.html">The Essence of Hole Punchers</a></li>
+    
+      <li class="author-post"><a href="/short%20take/2018/10/11/packers-vs-argentina.html">The Green Bay Packers versus the Argentinian National Team</a></li>
+    
+      <li class="author-post"><a href="/short%20take/2018/09/26/fats-and-healthy-eating.html">Fats and Healthy Eating: They Don't Wanna Taco 'Bout it</a></li>
+    
+  </ul>
+</div>
+
+  </body>
+  <script>
+    var lastScrollTop = 0;
+    window.onscroll = function() {
+      var st = window.pageYOffset || document.documentElement.scrollTop;
+    if(st >= lastScrollTop) {
+      document.getElementsByClassName("topnav")[0].classList.add("topnav-scrolling-down");
+      document.getElementsByClassName("topnav")[0].classList.remove("topnav-scrolling-up");
+    } else {
+      document.getElementsByClassName("topnav")[0].classList.remove("topnav-scrolling-down");
+      document.getElementsByClassName("topnav")[0].classList.add("topnav-scrolling-up");
+    }
+    lastScrollTop = st <= 0 ? 0: st;
+    if(window.pageYOffset <= 0) {
+      if(document.getElementsByClassName("topnav-scrolling-up").length > 0) {
+      	if(document.getElementsByClassName("topnav-scrolling-down").length > 0) {
+      		document.getElementsByClassName("topnav-scrolling-down")[0].classList.remove("topnav-scrolling-down");
+      	}
+        document.getElementsByClassName("topnav-scrolling-up")[0].classList.remove("topnav-scrolling-up");
+      }
+    }
+    }
+  </script>
+</html>

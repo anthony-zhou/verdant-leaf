@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.jpg">
+    <meta charset="utf-8">
+    <title>Allen</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110049631-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-110049631-3');
+    </script>
+  </head>
+  <body>
+    <nav class="topnav">
+  
+    
+    <a href="/" class="header-logo" style="order: 1">
+      <p class="logo-text">Verdant Leaf</p>
+    </a>
+    
+  
+    
+      <a href="/about.html"  style="order: 2">
+          About
+      </a>
+    
+  
+    
+      <a href="/staff.html"  style="order: 3">
+          Staff
+      </a>
+    
+  
+</nav>
+
+    <div class="author-page-container">
+  <h1>Allen Z</h1>
+  <h2>Writer</h2>
+
+  <p>Allen likes to play the guitar.</p>
+
+
+  <h2>Posts</h2>
+  <ul class="author-post-section">
+    
+    
+      <li class="author-post"><a href="/interview/2018/10/12/what-does-it-take-to-be-a-varsity-athlete.html">What does it take to be a varsity athlete?</a></li>
+    
+      <li class="author-post"><a href="/interview/2018/09/26/what-does-it-take-to-make-all-state.html">What does it take to qualify for the All-State Band?</a></li>
+    
+      <li class="author-post"><a href="/interview/2018/09/19/what-does-it-take-to-get-a-4.0-GPA.html">What does it take to get a 4.0 GPA?</a></li>
+    
+  </ul>
+</div>
+
+  </body>
+  <script>
+    var lastScrollTop = 0;
+    window.onscroll = function() {
+      var st = window.pageYOffset || document.documentElement.scrollTop;
+    if(st >= lastScrollTop) {
+      document.getElementsByClassName("topnav")[0].classList.add("topnav-scrolling-down");
+      document.getElementsByClassName("topnav")[0].classList.remove("topnav-scrolling-up");
+    } else {
+      document.getElementsByClassName("topnav")[0].classList.remove("topnav-scrolling-down");
+      document.getElementsByClassName("topnav")[0].classList.add("topnav-scrolling-up");
+    }
+    lastScrollTop = st <= 0 ? 0: st;
+    if(window.pageYOffset <= 0) {
+      if(document.getElementsByClassName("topnav-scrolling-up").length > 0) {
+      	if(document.getElementsByClassName("topnav-scrolling-down").length > 0) {
+      		document.getElementsByClassName("topnav-scrolling-down")[0].classList.remove("topnav-scrolling-down");
+      	}
+        document.getElementsByClassName("topnav-scrolling-up")[0].classList.remove("topnav-scrolling-up");
+      }
+    }
+    }
+  </script>
+</html>
