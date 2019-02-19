@@ -3,6 +3,6 @@ short_name: Vivian Hir
 name: Vivian Hir
 position: Writer
 ---
-Vivian Hir is a high school student that lives in the San Francisco Bay Area.
+Vivian Hir is a high school student who lives in the San Francisco Bay Area.
 
-Her blogs can be found [here](www.vivianh21114998.blogspot.com). Constructive feedback is appreciated.
+Her blogs can be found <a href="www.vivianh21114998.blogspot.com">here</a>. Constructive feedback is appreciated.
