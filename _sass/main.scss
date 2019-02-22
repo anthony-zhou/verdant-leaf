@@ -111,8 +111,10 @@ nav.topnav {
   }
   .header-logo:hover {
     color: white;
+    transition: .5s;
   }
   .header-link-text:hover {
+    transition: .5s;
     color: white;
   }
   .header-link-text:hover .underline {
