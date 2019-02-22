@@ -21,19 +21,21 @@
   
     
     <a href="/" class="header-logo" style="order: 1">
-      <p class="logo-text">Verdant Leaf</p>
+      <p class="logo-text">VERDANT LEAF</p>
     </a>
     
   
     
       <a href="/about.html"  style="order: 2">
-          About
+          <div class="header-link-text"><div>ABOUT</div>
+          <hr class="underline"></div>
       </a>
     
   
     
       <a href="/staff.html"  style="order: 3">
-          Staff
+          <div class="header-link-text"><div>STAFF</div>
+          <hr class="underline"></div>
       </a>
     
   
@@ -53,22 +55,38 @@ Daniel is a regular contributor to the Verdant Leaf
     var lastScrollTop = 0;
     window.onscroll = function() {
       var st = window.pageYOffset || document.documentElement.scrollTop;
+    //   if(window.pageYOffset <= 0) {
+    //     document.getElementsByClassName("topnav")[0].style.background = "none";
+    //     if(document.getElementsByClassName("topnav-scrolling-up").length > 0) {
+    //     	if(document.getElementsByClassName("topnav-scrolling-down").length > 0) {
+    //     		document.getElementsByClassName("topnav-scrolling-down")[0].classList.remove("topnav-scrolling-down");
+    //     	}
+    //       document.getElementsByClassName("topnav-scrolling-up")[0].classList.remove("topnav-scrolling-up");
+    //     }
+    //   } else {
+    //       document.getElementsByClassName("topnav")[0].style.backgroundColor = "#333333";
+    //   if(st >= lastScrollTop) {
+    //   document.getElementsByClassName("topnav")[0].classList.add("topnav-scrolling-down");
+    //   document.getElementsByClassName("topnav")[0].classList.remove("topnav-scrolling-up");
+    // } else {
+    //   document.getElementsByClassName("topnav")[0].classList.remove("topnav-scrolling-down");
+    //   document.getElementsByClassName("topnav")[0].classList.add("topnav-scrolling-up");
+    // }
+    // }
     if(st >= lastScrollTop) {
-      document.getElementsByClassName("topnav")[0].classList.add("topnav-scrolling-down");
-      document.getElementsByClassName("topnav")[0].classList.remove("topnav-scrolling-up");
+      if(document.querySelector(".topnav").classList.contains("topnav-scrolling-up")) {
+        document.querySelector(".topnav").classList.remove("topnav-scrolling-up");
+        document.querySelector(".topnav").classList.add("topnav-scrolling-down");
+      }
     } else {
-      document.getElementsByClassName("topnav")[0].classList.remove("topnav-scrolling-down");
-      document.getElementsByClassName("topnav")[0].classList.add("topnav-scrolling-up");
+      document.querySelector(".topnav").classList.remove("topnav-scrolling-down");
+      document.querySelector(".topnav").classList.add("topnav-scrolling-up");
+    }
+    if(window.pageYOffset <= 0) {
+      document.getElementsByClassName("topnav")[0].classList.remove("topnav-scrolling-up");
     }
     lastScrollTop = st <= 0 ? 0: st;
-    if(window.pageYOffset <= 0) {
-      if(document.getElementsByClassName("topnav-scrolling-up").length > 0) {
-      	if(document.getElementsByClassName("topnav-scrolling-down").length > 0) {
-      		document.getElementsByClassName("topnav-scrolling-down")[0].classList.remove("topnav-scrolling-down");
-      	}
-        document.getElementsByClassName("topnav-scrolling-up")[0].classList.remove("topnav-scrolling-up");
-      }
-    }
+
     }
   </script>
 </html>

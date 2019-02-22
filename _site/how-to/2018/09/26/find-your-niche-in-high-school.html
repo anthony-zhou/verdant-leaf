@@ -21,19 +21,21 @@
   
     
     <a href="/" class="header-logo" style="order: 1">
-      <p class="logo-text">Verdant Leaf</p>
+      <p class="logo-text">VERDANT LEAF</p>
     </a>
     
   
     
       <a href="/about.html"  style="order: 2">
-          About
+          <div class="header-link-text"><div>ABOUT</div>
+          <hr class="underline"></div>
       </a>
     
   
     
       <a href="/staff.html"  style="order: 3">
-          Staff
+          <div class="header-link-text"><div>STAFF</div>
+          <hr class="underline"></div>
       </a>
     
   
@@ -43,7 +45,7 @@
 <h1>How to find your niche in high school</h1>
 <p>26 Sep 2018 - Moiz</p>
 <p>Your niche in high school is reflective of the basic foundation that you would want your adult  		life to be based upon. Whether it be community service, sports or club president, your niche should 		be a reflection of who you are and what kind of things you are interested in. </p> 		<br> 		<p>That being said, when you first enter high school, you probably don’t know what you want to do with 		the rest of your life and when you leave high school, this will still probably be true. But everyone  		has a niche, you probably don’t know it yet. To figure out what you are good at, first focus on the 		things that you are comfortable with and have a basic understanding for. If you are good at something, 		like soccer, join the soccer team or if you love science, join a science club. At the same time, 		you don’t really know who you are. High school is a time where you really develop your personality  		so don’t be afraid to try something new. While your 1st, 2nd, 3rd, 4th or 5th choice may not be what 		you ultimately fall in love with, it will eventually lead you on the right path. </p> 		<br> 		<p>High school is about building on the foundation that has already been built in middle and elementary 		school as well as adding different parts to your personality that may have been unbeknownst to you  		if you had never tried them. By finding your niche, it lays down the groundwork for your major in 		college and eventually your life beyond school. </p>
-Moiz is a regular contributor to the Verdant Leaf
+Moiz is a regular contributor to the Verdant Leaf who shaves daily. 
 
 </div>
 
@@ -52,22 +54,38 @@ Moiz is a regular contributor to the Verdant Leaf
     var lastScrollTop = 0;
     window.onscroll = function() {
       var st = window.pageYOffset || document.documentElement.scrollTop;
+    //   if(window.pageYOffset <= 0) {
+    //     document.getElementsByClassName("topnav")[0].style.background = "none";
+    //     if(document.getElementsByClassName("topnav-scrolling-up").length > 0) {
+    //     	if(document.getElementsByClassName("topnav-scrolling-down").length > 0) {
+    //     		document.getElementsByClassName("topnav-scrolling-down")[0].classList.remove("topnav-scrolling-down");
+    //     	}
+    //       document.getElementsByClassName("topnav-scrolling-up")[0].classList.remove("topnav-scrolling-up");
+    //     }
+    //   } else {
+    //       document.getElementsByClassName("topnav")[0].style.backgroundColor = "#333333";
+    //   if(st >= lastScrollTop) {
+    //   document.getElementsByClassName("topnav")[0].classList.add("topnav-scrolling-down");
+    //   document.getElementsByClassName("topnav")[0].classList.remove("topnav-scrolling-up");
+    // } else {
+    //   document.getElementsByClassName("topnav")[0].classList.remove("topnav-scrolling-down");
+    //   document.getElementsByClassName("topnav")[0].classList.add("topnav-scrolling-up");
+    // }
+    // }
     if(st >= lastScrollTop) {
-      document.getElementsByClassName("topnav")[0].classList.add("topnav-scrolling-down");
-      document.getElementsByClassName("topnav")[0].classList.remove("topnav-scrolling-up");
+      if(document.querySelector(".topnav").classList.contains("topnav-scrolling-up")) {
+        document.querySelector(".topnav").classList.remove("topnav-scrolling-up");
+        document.querySelector(".topnav").classList.add("topnav-scrolling-down");
+      }
     } else {
-      document.getElementsByClassName("topnav")[0].classList.remove("topnav-scrolling-down");
-      document.getElementsByClassName("topnav")[0].classList.add("topnav-scrolling-up");
+      document.querySelector(".topnav").classList.remove("topnav-scrolling-down");
+      document.querySelector(".topnav").classList.add("topnav-scrolling-up");
+    }
+    if(window.pageYOffset <= 0) {
+      document.getElementsByClassName("topnav")[0].classList.remove("topnav-scrolling-up");
     }
     lastScrollTop = st <= 0 ? 0: st;
-    if(window.pageYOffset <= 0) {
-      if(document.getElementsByClassName("topnav-scrolling-up").length > 0) {
-      	if(document.getElementsByClassName("topnav-scrolling-down").length > 0) {
-      		document.getElementsByClassName("topnav-scrolling-down")[0].classList.remove("topnav-scrolling-down");
-      	}
-        document.getElementsByClassName("topnav-scrolling-up")[0].classList.remove("topnav-scrolling-up");
-      }
-    }
+
     }
   </script>
 </html>

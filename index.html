@@ -3,10 +3,33 @@ layout: default
 title: Home
 ---
 <div class="home-page-container">
+  <!--
 <div class="layer layer-01"></div>
-<div class="layer layer-02"></div>
+<div class="layer layer-02"></div>-->
 
 <div class="feature-section">
+  <div class="hero-feature">
+    <a href="how-to/2018/09/09/how-to-make-better-toast.html">
+      <div class="hero-feature-text">
+        <b>Have a better breakfast</b>
+        <h2>HOW TO MAKE BETTER TOAST</h2>
+      </div>
+    </a>
+  </div>
+  <div class="featured-articles">
+    <h1>FEATURED</h1>
+    <a href="essay/2019/02/08/3rd-Quarter-winners-are-the-Super-Bowl-losers.html">
+      <div class="fa-1">
+        <img class="fa-img" src="/assets/images/3rd-Quarter-winners-are-the-Super-Bowl-losers.jpg" alt="nfl players on a football field">
+        <div class="fa-1-txt">
+          <p>Daniel F</p>
+          <b>An analysis of Super Bowl LIII</b>
+          <h2>3rd Quarter Winners are the Super Bowl Losers</h2>
+        </div>
+      </div>
+    </a>
+  </div>
+  <!--
   {% for post in site.posts limit:4 offset: 4 %}
   <div style="{% cycle "left: 30%; top:20%;", "left: 10%; top: 50%;", "right: 30%;top:20%;", "right: 10%; top: 50%" %}" class="small-cloud">
     <a href="{{ post.url }}">
@@ -17,7 +40,7 @@ title: Home
         <b>{{ post.category | upcase }}</b>
         <h2>{{ post.title }}</h2>
       </div>
-      
+
 
     </a>
   </div>
@@ -25,11 +48,18 @@ title: Home
   <div class="large-circle">
     <a href="how-to/2018/09/09/how-to-make-better-toast.html">
       <img src="assets/images/Toast in Toaster.jpg">
-      <b>HAVE A BETTER BREAKFAST</b>
-      <h2>How to make better toast.</h2>
+      <div class="large-circle-text">
+        <b>HAVE A BETTER BREAKFAST</b>
+        <h2>How to make better toast.</h2>
+      </div>
     </a>
   </div>
+
+  -->
 </div>
+
+
+
 <div class="recent-post-container">
   <h1>Latest Posts</h1>
   <ul class="recent-post-section">

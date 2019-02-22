@@ -21,29 +21,54 @@
   
     
     <a href="/" class="header-logo" style="order: 1">
-      <p class="logo-text">Verdant Leaf</p>
+      <p class="logo-text">VERDANT LEAF</p>
     </a>
     
   
     
       <a href="/about.html"  style="order: 2">
-          About
+          <div class="header-link-text"><div>ABOUT</div>
+          <hr class="underline"></div>
       </a>
     
   
     
       <a href="/staff.html"  style="order: 3">
-          Staff
+          <div class="header-link-text"><div>STAFF</div>
+          <hr class="underline"></div>
       </a>
     
   
 </nav>
 
     <div class="home-page-container">
+  <!--
 <div class="layer layer-01"></div>
-<div class="layer layer-02"></div>
+<div class="layer layer-02"></div>-->
 
 <div class="feature-section">
+  <div class="hero-feature">
+    <a href="how-to/2018/09/09/how-to-make-better-toast.html">
+      <div class="hero-feature-text">
+        <b>Have a better breakfast</b>
+        <h2>HOW TO MAKE BETTER TOAST</h2>
+      </div>
+    </a>
+  </div>
+  <div class="featured-articles">
+    <h1>FEATURED</h1>
+    <a href="essay/2019/02/08/3rd-Quarter-winners-are-the-Super-Bowl-losers.html">
+      <div class="fa-1">
+        <img class="fa-img" src="/assets/images/3rd-Quarter-winners-are-the-Super-Bowl-losers.jpg" alt="nfl players on a football field">
+        <div class="fa-1-txt">
+          <p>Daniel F</p>
+          <b>An analysis of Super Bowl LIII</b>
+          <h2>3rd Quarter Winners are the Super Bowl Losers</h2>
+        </div>
+      </div>
+    </a>
+  </div>
+  <!--
   
   <div style="left: 30%; top:20%;" class="small-cloud">
     <a href="/essay/2019/02/03/how-to-study-more-effectively.html">
@@ -54,7 +79,7 @@
         <b>ESSAY</b>
         <h2>How to Study More Effectively</h2>
       </div>
-      
+
 
     </a>
   </div>
@@ -68,7 +93,7 @@
         <b>ESSAY</b>
         <h2>Three Week Digital Minimalism Human Study Results</h2>
       </div>
-      
+
 
     </a>
   </div>
@@ -82,7 +107,7 @@
         <b>ESSAY</b>
         <h2>5 Computer Applications to Boost Your Productivity</h2>
       </div>
-      
+
 
     </a>
   </div>
@@ -96,7 +121,7 @@
         <b>ESSAY</b>
         <h2>Digital Declutter Experiment</h2>
       </div>
-      
+
 
     </a>
   </div>
@@ -104,11 +129,18 @@
   <div class="large-circle">
     <a href="how-to/2018/09/09/how-to-make-better-toast.html">
       <img src="assets/images/Toast in Toaster.jpg">
-      <b>HAVE A BETTER BREAKFAST</b>
-      <h2>How to make better toast.</h2>
+      <div class="large-circle-text">
+        <b>HAVE A BETTER BREAKFAST</b>
+        <h2>How to make better toast.</h2>
+      </div>
     </a>
   </div>
+
+  -->
 </div>
+
+
+
 <div class="recent-post-container">
   <h1>Latest Posts</h1>
   <ul class="recent-post-section">
@@ -416,22 +448,38 @@
     var lastScrollTop = 0;
     window.onscroll = function() {
       var st = window.pageYOffset || document.documentElement.scrollTop;
+    //   if(window.pageYOffset <= 0) {
+    //     document.getElementsByClassName("topnav")[0].style.background = "none";
+    //     if(document.getElementsByClassName("topnav-scrolling-up").length > 0) {
+    //     	if(document.getElementsByClassName("topnav-scrolling-down").length > 0) {
+    //     		document.getElementsByClassName("topnav-scrolling-down")[0].classList.remove("topnav-scrolling-down");
+    //     	}
+    //       document.getElementsByClassName("topnav-scrolling-up")[0].classList.remove("topnav-scrolling-up");
+    //     }
+    //   } else {
+    //       document.getElementsByClassName("topnav")[0].style.backgroundColor = "#333333";
+    //   if(st >= lastScrollTop) {
+    //   document.getElementsByClassName("topnav")[0].classList.add("topnav-scrolling-down");
+    //   document.getElementsByClassName("topnav")[0].classList.remove("topnav-scrolling-up");
+    // } else {
+    //   document.getElementsByClassName("topnav")[0].classList.remove("topnav-scrolling-down");
+    //   document.getElementsByClassName("topnav")[0].classList.add("topnav-scrolling-up");
+    // }
+    // }
     if(st >= lastScrollTop) {
-      document.getElementsByClassName("topnav")[0].classList.add("topnav-scrolling-down");
-      document.getElementsByClassName("topnav")[0].classList.remove("topnav-scrolling-up");
+      if(document.querySelector(".topnav").classList.contains("topnav-scrolling-up")) {
+        document.querySelector(".topnav").classList.remove("topnav-scrolling-up");
+        document.querySelector(".topnav").classList.add("topnav-scrolling-down");
+      }
     } else {
-      document.getElementsByClassName("topnav")[0].classList.remove("topnav-scrolling-down");
-      document.getElementsByClassName("topnav")[0].classList.add("topnav-scrolling-up");
+      document.querySelector(".topnav").classList.remove("topnav-scrolling-down");
+      document.querySelector(".topnav").classList.add("topnav-scrolling-up");
+    }
+    if(window.pageYOffset <= 0) {
+      document.getElementsByClassName("topnav")[0].classList.remove("topnav-scrolling-up");
     }
     lastScrollTop = st <= 0 ? 0: st;
-    if(window.pageYOffset <= 0) {
-      if(document.getElementsByClassName("topnav-scrolling-up").length > 0) {
-      	if(document.getElementsByClassName("topnav-scrolling-down").length > 0) {
-      		document.getElementsByClassName("topnav-scrolling-down")[0].classList.remove("topnav-scrolling-down");
-      	}
-        document.getElementsByClassName("topnav-scrolling-up")[0].classList.remove("topnav-scrolling-up");
-      }
-    }
+
     }
   </script>
 </html>

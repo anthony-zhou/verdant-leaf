@@ -10,13 +10,45 @@ img {
   width: 100%;
 }
 .home-page-container {
-  background-color: rgb(185, 229, 254);
+  background-color: #dee9fc;
   /*background: rgb(95,177,251);
 background: linear-gradient(to bottom, rgba(95,177,251,1) 0%, rgba(130,225,255,1) 70%, rgba(255,255,255,1) 100%);*/
 }
 .article-container {
   margin-top: 20%;
   margin-bottom: 50px;
+}
+.hero-feature {
+  width: 100%;
+  height: 50vh;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/assets/images/Toast in Toaster.jpg');
+  overflow: hidden;
+  background-size: cover;
+  .hero-feature-text {
+    margin-top: 50%;
+    color: white;
+  }
+}
+h1 {
+  border-bottom: 4px solid #47e9b4;
+}
+.featured-articles {
+
+  margin: auto;
+  .fa-1 {
+    transition: 0.2s;
+    .fa-img {
+    }
+    h2 {
+      text-align: left;
+    }
+    p {
+      font-weight: bold;
+    }
+  }
+  .fa-1:hover {
+    color: #34ad84
+  }
 }
 .author-page-container {
   margin: auto;
@@ -44,34 +76,53 @@ ul.all-authors {
   }
 }
 nav.topnav {
-  position: fixed;
+  position: absolute;
   top: 0;
   height: 8vh;
   width: 100%;
   display: flex;
   padding: 0 0px 0px 0px;
   z-index: 10;
+  transition: 0.5s;
+  /*
   background-color: #0098ff;
   border-bottom: 1px solid #edf7ff;
-
+*/
   a {
     flex: auto;
     text-align: left;
-    font-size: 20px;
     padding: 10px;
-    color: white;
+    color: #b8c5db;
+    transition: .3s;
+    font-size: 12pt;
+  }
+  .header-link-text {
+    display: inline-block;
+  }
+  .underline {
+    display: inline-block;
+    float: right;
+    width: 0;
+    height: 2px;
+    border: none;
+    background-color: #ffffff;
+    transition: 0.5s;
+    margin: 0;
   }
   a:hover {
-    opacity:0.8;
-    transition: .5s;
+    color: white;
+  }
+  a:hover .underline {
+    float: left;
+    width: 100%;
   }
   .header-logo {
     flex-grow: 4;
     text-align: left;
-    font-weight: bold;
+    font-weight: auto;
+    padding-left: 10%;
   }
   .logo-text {
-    font-size: 20px;
     display: inline;
     position: relative;
   }
@@ -104,15 +155,17 @@ a:hover {
   font-size: 16pt;
 }
 nav.topnav-scrolling-up {
-  position: fixed;
+  position: fixed !important;
   animation-name: fillin;
   animation-duration: 0.6s;
+  background-color: #333333;
 }
 nav.topnav-scrolling-down {
-	position: fixed;
+	position: fixed !important;
   animation-name: slideout;
   animation-duration: 0.6s;
   animation-fill-mode: forwards;
+  background-color: #333333;
 }
 @keyframes fillin {
   from {position: fixed; top: -10vh;}
@@ -159,6 +212,9 @@ nav.topnav-scrolling-down {
   .recent-post:hover {
     opacity: 0.7;
   }
+  nav.topnav a {
+    font-size: 16pt;
+  }
 }
 
 
@@ -179,23 +235,6 @@ nav.topnav-scrolling-down {
       padding-left: 10px;
     }
   }
-  .layer {
-  	background-position: bottom center;
-  	background-size: contain;
-  	background-repeat: no-repeat;
-  	width: 100%;
-  	height: 100%;
-  	position: absolute;
-    left: 0;
-    top: 0;
-  }
-  .layer-01 {
-     background-image: url('../images/background/Blue sky gradient.svg');
-     background-size: cover;
-  }
-  .layer-02 {
-     background-image: url('../images/background/Clouds without background.png');
-  }
   .recent-post-container {
     width: 80vw;
     margin: auto;
@@ -210,66 +249,78 @@ nav.topnav-scrolling-down {
     width: 60%;
     margin: auto;
   }
-  .feature-section {
-    height: 160vh;
+
+  .hero-feature {
+    height: 100vh;
+    .hero-feature-text {
+      font-size: 24pt;
+      text-align: right;
+      color: white;
+      position: absolute;
+      right: 7%;
+      bottom: 0;
+    }
+    .accent {
+      transition: 0.3s;
+      width: 20%;
+      height: 30px;
+      border: none;
+      background-color: #37e9b4;
+      display: inline-block;
+      display: none;
+
+    }
+    .accent:hover {
+      width: 50%;
+    }
+    b {
+      display: block;
+      color: #37e9b4;
+    }
+    .hero-feature-text h2 {
+      font-size: 48pt;
+    }
   }
-  .small-cloud {
-    position: absolute;
-    width: 20vh;
-  }
-  .small-circle {
-    width: 20vh;
-    height: 20vh;
-    border-radius: 5vh;
-    overflow: hidden;
-    transition: 0.5s;
-  }
-  .small-circle:hover {
-    border-radius: 15vh;
-    width: 30vh;
-    height: 30vh;
-    transform: translate(-15%, -15%);
-  }
-  .small-circle-text {
-    text-align: center;
-    width: 200%;
-    transform: translateX(-25%);
-  }
-  .small-circle-text b {
-    font-size: 10pt;
-  }
-  .feature-section h2 {
-    font-size: 12pt;
-    text-align: center;
-  }
-  .large-circle h2 {
-    font-size: 56pt;
+  .featured-articles {
+    width: 80vw;
+    .fa-1 {
+      width: 80%;
+      .fa-img {
+        width: 50%;
+        display: inline-block;
+      }
+      .fa-1-txt {
+        display: inline-block;
+        width: 48%;
+        b {
+          font-size: 20pt;
+        }
+        h2 {
+          font-size: 30pt;
+          white-space: wrap;
+        }
+      }
+    }
   }
   .large-circle {
-    text-align: center;
-  }
-  .small-circle img {
-    width: 150%;
-  }
-  .large-circle {
     position: absolute;
-    width: 450vw;
-    height: 35vw;
-    border-radius: .5vw;
+    width: 40vw;
     left: 50%;
     top: 70%;
     transform: translate(-50%, 0);
     position: absolute;
-    overflow: hidden;
+    text-align: center;
+    .large-circle-text {
+      transform: translate(50%,-50%);
+      h2 {
+        font-size: 24pt;
+      }
+    }
   }
-  .large-circle h2 {
-    margin-top: -70%;
-    color: white;
-  }
+
   .large-circle img {
     z-index: 0;
-    width: auto;
-    height: 100%;
+    width: 100%;
   }
 }
 
