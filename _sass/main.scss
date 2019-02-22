@@ -109,10 +109,13 @@ nav.topnav {
     transition: 0.5s;
     margin: 0;
   }
-  a:hover {
+  .header-logo:hover {
     color: white;
   }
-  a:hover .underline {
+  .header-link-text:hover {
+    color: white;
+  }
+  .header-link-text:hover .underline {
     float: left;
     width: 100%;
   }
