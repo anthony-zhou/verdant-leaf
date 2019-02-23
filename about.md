@@ -68,7 +68,7 @@ margin-bottom: 2vw;
   }
   p {
   margin:0px 0px 0px 0px;
-  font-size: 1.2vw;
+  font-size: auto;
   }
   .middlebutton{
     background-color: none;
