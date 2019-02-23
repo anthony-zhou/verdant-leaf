@@ -2,7 +2,7 @@
   {% for item in site.data.navigation %}
     {% if item.link == "/" %}
     <a href="{{ item.link }}" class="header-logo" style="order: {{ item.order }}">
-      <p class="logo-text">Verdant Leaf</p>
+      <p class="logo-text">V E R D A N T &nbsp;L E A F</p>
     </a>
     {% else %}
       <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %} style="order: {{ item.order }}">
