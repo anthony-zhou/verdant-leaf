@@ -127,6 +127,14 @@ font-size: 2.2vw;
 font-size: 3vw;
 margin-bottom: 2vw;
 }
+
+.em {
+ display: inline-block;
+ transition: .5s;
+ }
+ .em:hover {
+ color: #008dff;
+ }
   </style>
 
  <div id= "container" >
@@ -156,7 +164,7 @@ margin-bottom: 2vw;
 
    <p>
     We welcome all writings. From poetry to theatrical scripts to breaking news to fictional stories to essays, just send it to us!
-      After we evaluate your writing, it will be posted online within 2 days.</p>
+      After we evaluate your writing, it will be posted online ASAP. Email us at <div class = "em"> theverdantleaf@gmail.com </div></p>
 
  <br>
  <a href = "mailto:theverdantleaf@gmail.com?Subject=article-submission" class = "bottombutton"> Submit</a>
