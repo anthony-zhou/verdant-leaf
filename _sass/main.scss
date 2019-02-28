@@ -13,6 +13,9 @@ img {
   background-color: #dee9fc;
   /*background: rgb(95,177,251);
 background: linear-gradient(to bottom, rgba(95,177,251,1) 0%, rgba(130,225,255,1) 70%, rgba(255,255,255,1) 100%);*/
+  h1 {
+    border-bottom: 4px solid #47e9b4;
+  }
 }
 .article-container {
   margin-bottom: 50px;
@@ -29,9 +32,7 @@ background: linear-gradient(to bottom, rgba(95,177,251,1) 0%, rgba(130,225,255,1
     color: white;
   }
 }
-h1 {
-  border-bottom: 4px solid #47e9b4;
-}
+
 .featured-articles {
 
   margin: auto;
